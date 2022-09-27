@@ -1,0 +1,25 @@
+{
+    "name": "wa-bot-v1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js -e ejs,js,css,html,jpg,png,scss",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "handy-storage": "^2.1.6",
+        "moment": "^2.29.4",
+        "qrcode-terminal": "^0.12.0",
+        "whatsapp-web.js": "^1.17.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.23.1",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "nodemon": "^2.0.20",
+        "prettier": "^2.7.1"
+    }
+}

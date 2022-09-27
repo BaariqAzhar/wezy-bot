@@ -1,0 +1,40 @@
+{
+    "configuration": {
+        "masterNumber": "6287738210702",
+        "botNumber": "62859106838223"
+    },
+    "autoSend": [
+        {
+            "time": "08:00",
+            "message": "Good morning",
+            "no": "6287738210702"
+        },
+        {
+            "tiem": "12:00-13:00",
+            "message": "Good afternoon",
+            "no": "6287738210702"
+        },
+        {
+            "time": "18:00-19:00",
+            "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
+            "no": "6287738210702"
+        }
+    ],
+    "reply": [
+        {
+            "message": "Hello",
+            "reply": ["Hi", "Hello", "Uy uy", "Hayya"]
+        },
+        {
+            "message": "How are you?",
+            "reply": "I'm fine, thank you"
+        },
+        {
+            "message": ["What's your name?", "what is your name?", "who are you?"],
+            "reply": "My name is Erieri build by Wezy-bot"
+        }
+    ],
+    "mention": {
+        "reply": ["What's up?", "Hello", "Uy uy", "Hayya", "What's happen?"]
+    }
+}
