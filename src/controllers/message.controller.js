@@ -46,43 +46,6 @@ const messageController = async (client, message) => {
             }
         }
     }
-
-    // //   * Hi
-    // if (lowerCaseMessage === 'hello' || lowerCaseMessage === 'hi' || lowerCaseMessage === 'halo') {
-    //     console.log('send message', lowerCaseMessage);
-    //     message.reply(`Hiiiii`);
-    // }
-
-    // //  * Good Morning
-    // if (
-    //     (lowerCaseMessage.includes('selamat') && lowerCaseMessage.includes('pagi')) ||
-    //     (lowerCaseMessage.includes('good') && lowerCaseMessage.includes('morning'))
-    // ) {
-    //     let randomNum = 0;
-
-    //     const num = Math.random();
-    //     if (num < 0.3) {
-    //         randomNum = 0;
-    //     } else if (num < 0.6) {
-    //         randomNum = 1;
-    //     } else {
-    //         randomNum = Math.floor(Math.random() * 11);
-    //     }
-
-    //     console.log('send message ', greetings[randomNum]);
-    //     message.reply(greetings[randomNum]);
-    // }
-
-    // // * List Birthday
-    // if (
-    //     lowerCaseMessage.includes('minta') &&
-    //     lowerCaseMessage.includes('list') &&
-    //     lowerCaseMessage.includes('ulang') &&
-    //     lowerCaseMessage.includes('tahun')
-    // ) {
-    //     console.log('send message list birthday');
-    //     message.reply(mbhBirthdayList);
-    // }
 };
 
 module.exports = messageController;
