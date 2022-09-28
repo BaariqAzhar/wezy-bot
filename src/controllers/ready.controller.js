@@ -2,7 +2,7 @@ const moment = require('moment');
 const chatIdOf = require('../helper/chatIdOf.js');
 const { scheduleControllerPer1, scheduleControllerPer60 } = require('./schedule.controller.js');
 
-const readyController = (client) => {
+const readyController = (client, storage) => {
     const timeNow = moment().format('MMMM Do YYYY, HH:mm:ss');
     console.log('Client is ready!', timeNow);
 
@@ -10,9 +10,7 @@ const readyController = (client) => {
     console.log('send :', text);
     client.sendMessage(chatIdOf('+6287738210702'), text);
 
-    let alreadySent = false;
-
-    setInterval(() => scheduleControllerPer1(client, alreadySent), 1000 * 60);
+    setInterval(() => scheduleControllerPer1(client, storage), 1000 * 60);
 
     setInterval(() => scheduleControllerPer60(client), 1000 * 60 * 60);
 };

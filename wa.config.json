@@ -1,23 +1,28 @@
 {
     "configuration": {
-        "masterNumber": "6287738210702",
-        "botNumber": "62859106838223"
+        "masterNumber": "+6287738210702",
+        "botNumber": "+62859106838223"
     },
     "autoSend": [
         {
+            "time": "12:58",
+            "message": "Test",
+            "no": "+6287738210702"
+        },
+        {
             "time": "08:00",
             "message": "Good morning",
-            "no": "6287738210702"
+            "no": "+6287738210702"
         },
         {
-            "tiem": "12:00-13:00",
+            "time": "12:00-13:00",
             "message": "Good afternoon",
-            "no": "6287738210702"
+            "no": "+6287738210702"
         },
         {
-            "time": "18:00-19:00",
+            "time": "12:59",
             "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
-            "no": "6287738210702"
+            "no": "+6287738210702"
         }
     ],
     "reply": [
