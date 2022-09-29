@@ -1,4 +1,4 @@
 {
-    "log": { "minutes": 6, "hours": 0 },
-    "autoSend": [ 0, 0, 0, 1 ]
+    "log": { "minutes": 1, "hours": 0 },
+    "autoSend": [0, 0, 0, 0]
 }
