@@ -47,15 +47,8 @@ const scheduleControllerPer1 = (client, storage) => {
         console.log('created new autoSendData : ', tempAutoSendData);
     }
 
-    // todo
-    // * O create big logic
-    // * O create logic for random message
-    // * create logic for auto send with random hour and minute in range
-    // * create based on date
-    // const autoSendData = waConfig?.autoSend;
     if (autoSendData.length > 0) {
         for (const i in autoSendData) {
-            // if (!autoSendData?.[i]?.time.includes('-')) {
             if (autoSendData[i].time === nowHHmm) {
                 if (Array.isArray(autoSendData?.[i]?.message)) {
                     const messageLength = autoSendData?.[i]?.message?.length;
@@ -74,7 +67,6 @@ const scheduleControllerPer1 = (client, storage) => {
                     autoSend: tempAutoSend,
                 });
             }
-            // }
         }
     }
 };

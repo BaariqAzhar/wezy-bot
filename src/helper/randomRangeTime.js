@@ -27,8 +27,6 @@ const parseMinutesToHHmm = (value) => {
 };
 
 const randomRangeTime = (rangeTime) => {
-    console.log('rangeTime', rangeTime);
-
     const timeSplit = rangeTime.split('-');
     const timeStart = timeSplit[0];
     const timeEnd = timeSplit[1];

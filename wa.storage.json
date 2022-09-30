@@ -1,7 +1,7 @@
 {
     "firstTime": false,
-    "log": { "minutes": 3, "hours": 0 },
-    "autoSend": [ 0, 0, 0, 0 ],
+    "log": { "minutes": 5, "hours": 0 },
+    "autoSend": [0, 0, 0, 1],
     "autoSendData": [
         {
             "time": "15:52",
@@ -20,13 +20,9 @@
         },
         {
             "time": "15:51",
-            "message": [
-                "Good evening",
-                "How are you?",
-                "Don't forget to get dinner"
-            ],
+            "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
             "no": "+6287738210702"
         }
     ],
-    "autoSendCount": [ 0, 0, 0, 0 ]
+    "autoSendCount": [0, 0, 0, 0]
 }
