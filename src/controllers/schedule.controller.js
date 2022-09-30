@@ -1,6 +1,7 @@
 const moment = require('moment');
 const chatIdOf = require('../helper/chatIdOf');
 const waConfig = require('../../wa.config.json');
+const randomRangeTime = require('../helper/randomRangeTime.js');
 
 const scheduleControllerPer60 = (client) => {
     const now = moment().format('HH:mm:ss');
@@ -10,7 +11,7 @@ const scheduleControllerPer60 = (client) => {
     client.sendMessage(chatIdOf('+6287738210702'), text);
 };
 
-const scheduleControllerPer1 = (client, storage, autoSendData) => {
+const scheduleControllerPer1 = (client, storage) => {
     const nowHour = moment().format('HH');
     const nowMinute = moment().format('mm');
     const nowSecond = moment().format('ss');
@@ -25,6 +26,26 @@ const scheduleControllerPer1 = (client, storage, autoSendData) => {
             minutes: storage.state.log.minutes + 1,
         },
     });
+
+    let autoSendData = storage.state?.autoSendData || [];
+    if (storage.state?.firstTime || now === '00:00') {
+        let tempAutoSendData = waConfig?.autoSend || [];
+        tempAutoSendData = tempAutoSendData.map((item) => {
+            if (!item?.time.includes('-')) return item;
+
+            return {
+                ...item,
+                time: randomRangeTime(item?.time),
+            };
+        });
+
+        storage.setState({
+            ...storage.state,
+            firstTime: false,
+            autoSendData: tempAutoSendData,
+        });
+        console.log('created new autoSendData : ', tempAutoSendData);
+    }
 
     // todo
     // * O create big logic

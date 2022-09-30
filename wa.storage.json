@@ -1,4 +1,32 @@
 {
-    "log": { "minutes": 1, "hours": 0 },
-    "autoSend": [0, 0, 0, 0]
+    "firstTime": false,
+    "log": { "minutes": 3, "hours": 0 },
+    "autoSend": [ 0, 0, 0, 0 ],
+    "autoSendData": [
+        {
+            "time": "15:52",
+            "message": "Test",
+            "no": "+6287738210702"
+        },
+        {
+            "time": "08:00",
+            "message": "Good morning",
+            "no": "+6287738210702"
+        },
+        {
+            "time": "15:53",
+            "message": "Good afternoon",
+            "no": "+6287738210702"
+        },
+        {
+            "time": "15:51",
+            "message": [
+                "Good evening",
+                "How are you?",
+                "Don't forget to get dinner"
+            ],
+            "no": "+6287738210702"
+        }
+    ],
+    "autoSendCount": [ 0, 0, 0, 0 ]
 }
