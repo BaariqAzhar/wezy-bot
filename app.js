@@ -1,6 +1,7 @@
 const waConfig = require('./wa.config.json');
 const qrcode = require('qrcode-terminal');
 const HandyStorage = require('handy-storage');
+const createAutoSendData = require('./src/helper/createAutoSendData');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
@@ -27,6 +28,7 @@ storage.setState({
         hours: 0,
     },
     autoSendCount,
+    autoSendData: createAutoSendData(waConfig?.autoSend),
 });
 
 client.initialize();
@@ -45,6 +47,6 @@ client.on('message', (message) => messageController(client, message));
 // * O create big logic
 // * O create logic for random message
 // * O create logic for auto send with random hour and minute in range
-// * move & execute createAutoSendData on early main file
-// * make random message on state too
+// * O move & execute createAutoSendData on early main file
+// * O make random message on state too
 // * create based on date

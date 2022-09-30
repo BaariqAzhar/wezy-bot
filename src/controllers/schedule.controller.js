@@ -1,7 +1,7 @@
 const moment = require('moment');
 const chatIdOf = require('../helper/chatIdOf');
 const waConfig = require('../../wa.config.json');
-const randomRangeTime = require('../helper/randomRangeTime.js');
+const createAutoSendData = require('../helper/createAutoSendData');
 
 const scheduleControllerPer60 = (client) => {
     const now = moment().format('HH:mm:ss');
@@ -28,21 +28,12 @@ const scheduleControllerPer1 = (client, storage) => {
     });
 
     let autoSendData = storage.state?.autoSendData || [];
-    if (storage.state?.firstTime || now === '00:00') {
-        let tempAutoSendData = waConfig?.autoSend || [];
-        tempAutoSendData = tempAutoSendData.map((item) => {
-            if (!item?.time.includes('-')) return item;
-
-            return {
-                ...item,
-                time: randomRangeTime(item?.time),
-            };
-        });
+    if (now === '00:00') {
+        let tempAutoSendData = createAutoSendData(waConfig?.autoSend) || [];
 
         storage.setState({
             ...storage.state,
-            firstTime: false,
-            autoSendData: tempAutoSendData,
+            ...tempAutoSendData,
         });
         console.log('created new autoSendData : ', tempAutoSendData);
     }
@@ -50,16 +41,9 @@ const scheduleControllerPer1 = (client, storage) => {
     if (autoSendData.length > 0) {
         for (const i in autoSendData) {
             if (autoSendData[i].time === nowHHmm) {
-                if (Array.isArray(autoSendData?.[i]?.message)) {
-                    const messageLength = autoSendData?.[i]?.message?.length;
-                    const randomIndex = Math.floor(Math.random() * messageLength);
-                    const messageText = autoSendData?.[i]?.message?.[randomIndex];
-                    console.log('send : ', messageText);
-                    client.sendMessage(chatIdOf(autoSendData?.[i]?.no), messageText);
-                } else {
-                    console.log('send : ', autoSendData?.[i]?.message);
-                    client.sendMessage(chatIdOf(chatIdOf(autoSendData?.[i]?.no)), autoSendData?.[i]?.message);
-                }
+                console.log('send : ', autoSendData?.[i]?.message);
+                client.sendMessage(chatIdOf(chatIdOf(autoSendData?.[i]?.no)), autoSendData?.[i]?.message);
+
                 const tempAutoSend = storage.state.autoSend;
                 tempAutoSend[Number(i)] = storage.state?.autoSend?.[Number(i)] + 1;
                 storage.setState({
