@@ -1,6 +1,6 @@
 {
     "firstTime": true,
-    "log": { "minutes": 0, "hours": 0 },
+    "log": { "minutes": 2, "hours": 0 },
     "autoSend": [ 0, 0, 0, 1 ],
     "autoSendData": [
         {

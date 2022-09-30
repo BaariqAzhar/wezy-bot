@@ -1,11 +1,11 @@
 const getRandom = require('./getRandom');
-const randomRangeTime = require('./randomRangeTime');
+const getRandomRangeTime = require('./getRandomRangeTime');
 
 const createAutoSendData = (data) => {
     const tempAutoSendData = data.map((item) => {
         return {
             ...item,
-            time: item?.time.includes('-') ? randomRangeTime(item?.time) : item?.time,
+            time: item?.time.includes('-') ? getRandomRangeTime(item?.time) : item?.time,
             message: Array.isArray(item?.message) ? getRandom(item?.message) : item?.message,
         };
     });

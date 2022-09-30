@@ -26,7 +26,7 @@ const parseMinutesToHHmm = (value) => {
     return `${parseTextTime(hours)}:${parseTextTime(minutes)}`;
 };
 
-const randomRangeTime = (rangeTime) => {
+const getRandomRangeTime = (rangeTime) => {
     const timeSplit = rangeTime.split('-');
     const timeStart = timeSplit[0];
     const timeEnd = timeSplit[1];
@@ -41,4 +41,4 @@ const randomRangeTime = (rangeTime) => {
     return randomHHmm;
 };
 
-module.exports = randomRangeTime;
+module.exports = getRandomRangeTime;
