@@ -2,6 +2,7 @@ const moment = require('moment');
 const chatIdOf = require('../helper/chatIdOf');
 const waConfig = require('../../wa.config.json');
 const createAutoSendData = require('../helper/createAutoSendData');
+const groupIdOf = require('../helper/groupIdOf');
 
 const scheduleControllerPer60 = (client) => {
     const now = moment().format('HH:mm:ss');
@@ -41,8 +42,13 @@ const scheduleControllerPer1 = (client, storage) => {
     if (autoSendData.length > 0) {
         for (const i in autoSendData) {
             if (autoSendData[i].time === nowHHmm) {
-                console.log('send : ', autoSendData?.[i]?.message);
-                client.sendMessage(chatIdOf(autoSendData?.[i]?.no), autoSendData?.[i]?.message);
+                if (autoSendData?.[i]?.no) {
+                    console.log('send : ', autoSendData?.[i]?.no, ' => ', autoSendData?.[i]?.message);
+                    client.sendMessage(chatIdOf(autoSendData?.[i]?.no), autoSendData?.[i]?.message);
+                } else if (autoSendData?.[i]?.group) {
+                    console.log('send : ', autoSendData?.[i]?.group, ' => ', autoSendData?.[i]?.message);
+                    client.sendMessage(groupIdOf(autoSendData?.[i]?.group), autoSendData?.[i]?.message);
+                }
             }
         }
     }

@@ -1,7 +1,13 @@
 {
     "firstTime": true,
-    "log": { "minutes": 2, "hours": 0 },
+    "log": { "minutes": 3, "hours": 0 },
     "autoSendData": [
+        {
+            "date": "2 Oct",
+            "time": "22:10",
+            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? hahaha 🤣🤣🤣",
+            "group": "120363044459245702"
+        },
         {
             "date": "2 Oct",
             "time": "21:10",

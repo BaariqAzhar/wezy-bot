@@ -43,4 +43,5 @@ client.on('message', (message) => messageController(client, message));
 // * O create logic for auto send with random hour and minute in range
 // * O move & execute createAutoSendData on early main file
 // * O make random message on state too
-// * create based on date
+// * O create based on date
+// * make command to help chat id
