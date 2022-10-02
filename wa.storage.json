@@ -1,6 +1,6 @@
 {
     "firstTime": true,
-    "log": { "minutes": 0, "hours": 0 },
+    "log": { "minutes": 2, "hours": 0 },
     "autoSendData": [
         {
             "date": "2 Oct",
@@ -9,7 +9,7 @@
             "no": "+6287738210702"
         },
         {
-            "time": "21:10",
+            "time": "21:11",
             "message": "Good afternoon",
             "no": "+6287738210702"
         }

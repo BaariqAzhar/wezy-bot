@@ -28,8 +28,7 @@ const scheduleControllerPer1 = (client, storage) => {
     });
 
     let autoSendData = storage.state?.autoSendData || [];
-    // todo 🔽
-    if (now === '00:00') {
+    if (now === '00:03') {
         let tempAutoSendData = createAutoSendData(waConfig?.autoSend) || [];
 
         storage.setState({
