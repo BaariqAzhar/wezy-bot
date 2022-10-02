@@ -15,11 +15,6 @@ const storage = new HandyStorage({
     beautify: true,
 });
 storage.connect('./wa.storage.json');
-const autoSendLength = waConfig?.autoSend?.length || 0;
-let autoSendCount = [];
-for (let index = 0; index < autoSendLength; index++) {
-    autoSendCount.push(0);
-}
 storage.setState({
     ...storage.state,
     firstTime: true,
@@ -27,7 +22,6 @@ storage.setState({
         minutes: 0,
         hours: 0,
     },
-    autoSendCount,
     autoSendData: createAutoSendData(waConfig?.autoSend),
 });
 

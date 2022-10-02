@@ -5,22 +5,25 @@
     },
     "autoSend": [
         {
+            "date": "03 Oct",
             "time": "16:30-16:40",
             "message": "Test",
             "no": "+6287738210702"
         },
         {
-            "time": "08:00",
+            "date": "2 Oct",
+            "time": "21:10",
             "message": "Good morning",
             "no": "+6287738210702"
         },
         {
-            "time": "16:30-16:40",
+            "time": "21:10-21:12",
             "message": "Good afternoon",
             "no": "+6287738210702"
         },
         {
-            "time": "16:30-16:40",
+            "date": "4 Oct",
+            "time": "20:59-21:00",
             "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
             "no": "+6287738210702"
         }

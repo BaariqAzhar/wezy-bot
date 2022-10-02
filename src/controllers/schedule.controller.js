@@ -28,6 +28,7 @@ const scheduleControllerPer1 = (client, storage) => {
     });
 
     let autoSendData = storage.state?.autoSendData || [];
+    // todo 🔽
     if (now === '00:00') {
         let tempAutoSendData = createAutoSendData(waConfig?.autoSend) || [];
 
@@ -42,14 +43,7 @@ const scheduleControllerPer1 = (client, storage) => {
         for (const i in autoSendData) {
             if (autoSendData[i].time === nowHHmm) {
                 console.log('send : ', autoSendData?.[i]?.message);
-                client.sendMessage(chatIdOf(chatIdOf(autoSendData?.[i]?.no)), autoSendData?.[i]?.message);
-
-                const tempAutoSend = storage.state.autoSend;
-                tempAutoSend[Number(i)] = storage.state?.autoSend?.[Number(i)] + 1;
-                storage.setState({
-                    ...storage.state,
-                    autoSend: tempAutoSend,
-                });
+                client.sendMessage(chatIdOf(autoSendData?.[i]?.no), autoSendData?.[i]?.message);
             }
         }
     }
