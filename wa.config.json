@@ -5,6 +5,12 @@
     },
     "autoSend": [
         {
+            "date": "3 Oct",
+            "time": "02:00",
+            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
+            "group": "6281235190914-1462187599"
+        },
+        {
             "date": "2 Oct",
             "time": "22:10",
             "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
@@ -17,24 +23,27 @@
             "no": "+6287738210702"
         },
         {
-            "date": "2 Oct",
-            "time": "21:10",
+            "time": "07:40",
             "message": "Good morning",
             "no": "+6287738210702"
         },
         {
-            "time": "21:10-21:12",
+            "time": "12:00-13:00",
             "message": "Good afternoon",
             "no": "+6287738210702"
         },
         {
-            "date": "4 Oct",
-            "time": "20:59-21:00",
+            "date": "3 Oct",
+            "time": "18:00-19:00",
             "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
             "no": "+6287738210702"
         }
     ],
     "reply": [
+        {
+            "message": ["minta list ulang tahun", "minta list ultah", "list ulang tahun"],
+            "reply": "rifal. January 20\nbebek. February 1\nalex. February 10\nwinda. April 7\nela. April 12\namy. May 12\nnia. May 26\nhasan. May 26\nbariq. June 23\naini. July 1\najeng. July 15\nridha. August 10\nvian. October 3"
+        },
         {
             "message": "Hello",
             "reply": ["Hi", "Hello", "Uy uy", "Hayya"]

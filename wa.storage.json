@@ -1,21 +1,20 @@
 {
     "firstTime": true,
-    "log": { "minutes": 3, "hours": 0 },
+    "log": { "minutes": 0, "hours": 0 },
     "autoSendData": [
         {
             "date": "2 Oct",
             "time": "22:10",
-            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? hahaha 🤣🤣🤣",
+            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
             "group": "120363044459245702"
         },
         {
-            "date": "2 Oct",
-            "time": "21:10",
+            "time": "07:40",
             "message": "Good morning",
             "no": "+6287738210702"
         },
         {
-            "time": "21:11",
+            "time": "12:22",
             "message": "Good afternoon",
             "no": "+6287738210702"
         }
