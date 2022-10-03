@@ -6,37 +6,35 @@
     "autoSend": [
         {
             "date": "3 Oct",
-            "time": "02:00",
+            "time": "16:00",
             "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
             "group": "6281235190914-1462187599"
         },
         {
-            "date": "2 Oct",
-            "time": "22:10",
-            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
-            "group": "120363044459245702"
-        },
-        {
-            "date": "03 Oct",
-            "time": "16:30-16:40",
+            "time": "16:00",
             "message": "Test",
             "no": "+6287738210702"
         },
         {
-            "time": "07:40",
-            "message": "Good morning",
-            "no": "+6287738210702"
+            "time": "08:00",
+            "message": "Good morning, miss.\nI hope you have a nice day 😆😆😆",
+            "no": "+6282301027618"
         },
         {
-            "time": "12:00-13:00",
-            "message": "Good afternoon",
-            "no": "+6287738210702"
+            "time": "12:00",
+            "message": "Good afternoon, miss.\nHave you got lunch yet?",
+            "no": "+6282301027618"
         },
         {
             "date": "3 Oct",
-            "time": "18:00-19:00",
-            "message": ["Good evening", "How are you?", "Don't forget to get dinner"],
-            "no": "+6287738210702"
+            "time": "16:00",
+            "message": "Hello, miss. I am a bot, my name is erieri.\n\nNice to meet you. I am here to help you.\n\nMy first mission that give it to me from my master is to remind you to eat food.\n\nHe say you are human, not like me. So you need eat well.\n\nThank you miss. That's it. Have nice day",
+            "no": "+6282301027618"
+        },
+        {
+            "time": "17:00",
+            "message": ["Good evening, miss.\nHave you got dinner yet?", "How are you?, I hope you okay miss", "Don't forget to get dinner"],
+            "no": "+6282301027618"
         }
     ],
     "reply": [
@@ -55,6 +53,10 @@
         {
             "message": ["What's your name?", "what is your name?", "who are you?"],
             "reply": "My name is Erieri build by Wezy-bot"
+        },
+        {
+            "message": ["Siapa kamu?", "Siapa nama kamu?", "Siapa nama lu?"],
+            "reply": "Aku Erieri, bot yang dibuat menggunakan Wezy-bot"
         }
     ],
     "mention": {

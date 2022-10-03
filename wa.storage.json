@@ -1,6 +1,6 @@
 {
     "firstTime": true,
-    "log": { "minutes": 0, "hours": 0 },
+    "log": { "minutes": 1, "hours": 0 },
     "autoSendData": [
         {
             "date": "2 Oct",
