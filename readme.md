@@ -1,12 +1,14 @@
-# WA Bot
+# Wezy Bot 🦾😸
 
-Learn how to use Node JS, using whatsapp-web.js to connect to WA
+**Whatsapp Bot with Eazy Configuration**
 
-## Tech Stack
+It's a fun project, the purpose of this project is the author wants to learn Node JS. But it's too boring if making CRUD like always do
 
-**Backend** NodeJS, whatsapp-web.js, qrcode-terminal, etc
+## Tech Stack 🛠
 
-## Run Locally
+**Backend** NodeJS, whatsapp-web.js, qrcode-terminal, handy-storage, etc
+
+## Run Locally 🏃‍♂️
 
 Clone the project
 
@@ -26,8 +28,16 @@ Install dependencies
   npm i
 ```
 
+Make custom configuration
+
+```bash
+  on file wa.storage.json
+```
+
 Start the server
 
 ```bash
   node app.js
 ```
+
+Finally your bot has been launch 🚀🚀🚀
