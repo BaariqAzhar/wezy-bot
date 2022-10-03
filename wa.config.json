@@ -5,36 +5,49 @@
     },
     "autoSend": [
         {
-            "date": "3 Oct",
-            "time": "16:30",
-            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
-            "group": "6281235190914-1462187599"
-        },
-        {
-            "time": "16:30",
-            "message": "Test",
-            "no": "+6287738210702"
-        },
-        {
+            "date": "4 Oct",
             "time": "08:00",
-            "message": "Good morning, miss.\nI hope you have a nice day 😆😆😆",
+            "message": "For the last time, I am sorry miss, because my master made that message on his office 😅\nSo now, I will reintroduce myself again\nHello, miss. I am a bot, my name is Erieri.\nNice to meet you. I am here to help you.\nMy first mission that has given to me from my master is to remind you to have  3 meals/day\nHe said you are human, not like me. So you need to eat well.\nThank you miss. That's it. Have nice day"
+        },
+        {
+            "time": "07:00",
+            "message": "Good morning, miss.\nI hope you have a nice day 😆😆😆\nYou should take a breakfast",
             "no": "+6282301027618"
         },
         {
-            "time": "12:00",
+            "time": "11:30",
             "message": "Good afternoon, miss.\nHave you got lunch yet?",
             "no": "+6282301027618"
         },
         {
-            "date": "3 Oct",
-            "time": "16:30",
-            "message": "Hello, miss. I am a bot, my name is erieri.\n\nNice to meet you. I am here to help you.\n\nMy first mission that give it to me from my master is to remind you to eat food.\n\nHe say you are human, not like me. So you need eat well.\n\nThank you miss. That's it. Have nice day",
+            "time": "17:00",
+            "message": ["Good evening, miss.\nHave you got dinner yet?", "How are you?, I hope you okay miss\nDon't forget to get a dinner"],
             "no": "+6282301027618"
         },
         {
-            "time": "17:00",
-            "message": ["Good evening, miss.\nHave you got dinner yet?", "How are you?, I hope you okay miss", "Don't forget to get dinner"],
+            "time": "22:00",
+            "message": "Good night, miss.\nI hope you have a nice dream 😆😆😆",
             "no": "+6282301027618"
+        },
+        {
+            "time": "07:40",
+            "message": ["Selamat Pagi 😆😆😆", "Good Morning 🤣🤣🤣", "Pagi semua 🙌🙌🙌"],
+            "group": "6281235190914-1462187599"
+        },
+        {
+            "time": "07:40",
+            "message": [
+                "Beri setiap hari kesempatan untuk menjadi hari terindah dalam hidupmu.\n~Mark Twain",
+                "Jika kau bangun pagi dan berpikir bahwa masa depan akan menjadi lebih baik, hari itu akan jadi hari yang cerah.\nElon Musk",
+                "Ketika kamu bangun di pagi hari, pikirkanlah apa hal yang istimewa untuk hidup, untuk bernapas, berpikir, menikmati, dan mencintai.\n~Marcus Aurelius",
+                "Tunda lapar, makan indomie hati menggelepar cintapun bersemi.\n~Erieri",
+                "Motivator dan pembicara tak dapat membuatku rajin bekerja. Hanya cicilan dan tagihan yang mampu.\n~Erieri",
+                "Manusia boleh berencana, tapi saldo juga yang menentukan.\n~Erieri",
+                "Jika seseorang melemparmu dengan batu, balaslah dengan bunga sekalian dengan potnya.\nErieri",
+                "Hidup itu seperti sebuah acara televisi yang sangat panjang tanpa remote control.\nErieri",
+                "Aku tidak suka kekerasan. Tapi tidak masalah kalau aku dipukul dengan keberuntungan.\nErieri"
+            ],
+            "group": "6281235190914-1462187599"
         }
     ],
     "reply": [
@@ -43,7 +56,7 @@
             "reply": "rifal. January 20\nbebek. February 1\nalex. February 10\nwinda. April 7\nela. April 12\namy. May 12\nnia. May 26\nhasan. May 26\nbariq. June 23\naini. July 1\najeng. July 15\nridha. August 10\nvian. October 3"
         },
         {
-            "message": "Hello",
+            "message": ["Hi", "Hello", "Uy uy", "Hayya"],
             "reply": ["Hi", "Hello", "Uy uy", "Hayya"]
         },
         {
