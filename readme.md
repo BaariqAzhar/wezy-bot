@@ -31,7 +31,7 @@ Install dependencies
 Make custom configuration
 
 ```bash
-  on file wa.storage.json
+  on file wa.config.json
 ```
 
 Start the server
