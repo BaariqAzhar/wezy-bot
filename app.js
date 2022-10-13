@@ -44,5 +44,5 @@ client.on('message', (message) => messageController(client, message));
 // * O make random message on state too
 // * O create based on date
 // * O fix the bug re create storage
-// * make example config dot json
+// * O make example config dot json
 // * make command to help chat id

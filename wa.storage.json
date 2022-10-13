@@ -1,6 +1,6 @@
 {
     "firstTime": true,
-    "log": { "minutes": 6, "hours": 0 },
+    "log": { "minutes": 16, "hours": 0 },
     "autoSendData": [
         {
             "time": "07:00",
@@ -29,7 +29,7 @@
         },
         {
             "time": "07:40",
-            "message": "Hidup itu seperti sebuah acara televisi yang sangat panjang tanpa remote control.\nErieri",
+            "message": "Jika kau bangun pagi dan berpikir bahwa masa depan akan menjadi lebih baik, hari itu akan jadi hari yang cerah.\nElon Musk",
             "group": "6281235190914-1462187599"
         }
     ]
