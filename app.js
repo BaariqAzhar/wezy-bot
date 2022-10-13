@@ -45,4 +45,6 @@ client.on('message', (message) => messageController(client, message));
 // * O create based on date
 // * O fix the bug re create storage
 // * O make example config dot json
+// * O add joke reply
+// * O change from equals to includes on reply
 // * make command to help chat id

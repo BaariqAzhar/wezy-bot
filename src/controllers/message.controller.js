@@ -35,9 +35,14 @@ const messageController = async (client, message) => {
                 let secondCondition = false;
                 if (Array.isArray(replyData?.[i]?.message)) {
                     const lowerCaseMessageData = replyData?.[i]?.message?.map((item) => item?.toLowerCase());
-                    secondCondition = lowerCaseMessageData.includes(lowerCaseMessage);
+                    for (const item of lowerCaseMessageData) {
+                        if (lowerCaseMessage.includes(item)) {
+                            secondCondition = true;
+                            break;
+                        }
+                    }
                 } else {
-                    firstCodition = lowerCaseMessage === replyData?.[i]?.message?.toLowerCase();
+                    firstCodition = lowerCaseMessage.includes(replyData?.[i]?.message?.toLowerCase());
                 }
 
                 // console.log('firstCodition : ', firstCodition);
