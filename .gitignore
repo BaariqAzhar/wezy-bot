@@ -1,6 +1,4 @@
 .wwebjs_auth
 node_modules
-# wa.config.json
-# wa.storage.json
-wa.config
-wa.storage
+*.config.json
+*.storage.json
