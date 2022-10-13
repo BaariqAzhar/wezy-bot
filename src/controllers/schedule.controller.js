@@ -5,11 +5,12 @@ const createAutoSendData = require('../helper/createAutoSendData');
 const groupIdOf = require('../helper/groupIdOf');
 
 const scheduleControllerPer60 = (client) => {
-    const now = moment().format('HH:mm:ss');
-    const text = `I am still alive, Sir at ${now}`;
-
-    console.log('send : ', text);
-    client.sendMessage(chatIdOf('+6287738210702'), text);
+    if (waConfig?.configuration?.masterNumber) {
+        const now = moment().format('HH:mm:ss');
+        const text = `I am still alive, Sir at ${now}`;
+        console.log('send :', text);
+        client.sendMessage(chatIdOf(waConfig?.configuration?.masterNumber), text);
+    }
 };
 
 const scheduleControllerPer1 = (client, storage) => {
@@ -29,14 +30,14 @@ const scheduleControllerPer1 = (client, storage) => {
     });
 
     let autoSendData = storage.state?.autoSendData || [];
-    if (nowHHmm === '00:03') {
+    if (nowHHmm === '00:00') {
         let tempAutoSendData = createAutoSendData(waConfig?.autoSend) || [];
 
         storage.setState({
             ...storage.state,
-            ...tempAutoSendData,
+            autoSendData: tempAutoSendData,
         });
-        console.log('created new autoSendData : ', tempAutoSendData);
+        console.log('created new autoSendData at : ', now);
     }
 
     if (autoSendData.length > 0) {

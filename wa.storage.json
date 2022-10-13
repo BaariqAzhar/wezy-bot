@@ -1,22 +1,36 @@
 {
     "firstTime": true,
-    "log": { "minutes": 1, "hours": 0 },
+    "log": { "minutes": 6, "hours": 0 },
     "autoSendData": [
         {
-            "date": "2 Oct",
-            "time": "22:10",
-            "message": "Rek rek rek, ada yang ulang tahun lo 🥳🎉🎊, siapa ya ? 👀",
-            "group": "120363044459245702"
+            "time": "07:00",
+            "message": "Good morning, miss.\nI hope you have a nice day 😆😆😆\nYou should take a breakfast",
+            "no": "+6282301027618"
+        },
+        {
+            "time": "11:30",
+            "message": "Good afternoon, miss.\nHave you got lunch yet?",
+            "no": "+6282301027618"
+        },
+        {
+            "time": "17:00",
+            "message": "Good evening, miss.\nHave you got dinner yet?",
+            "no": "+6282301027618"
+        },
+        {
+            "time": "22:00",
+            "message": "Good night, miss.\nI hope you have a nice dream 😆😆😆",
+            "no": "+6282301027618"
         },
         {
             "time": "07:40",
-            "message": "Good morning",
-            "no": "+6287738210702"
+            "message": "Good Morning 🤣🤣🤣",
+            "group": "6281235190914-1462187599"
         },
         {
-            "time": "12:22",
-            "message": "Good afternoon",
-            "no": "+6287738210702"
+            "time": "07:40",
+            "message": "Hidup itu seperti sebuah acara televisi yang sangat panjang tanpa remote control.\nErieri",
+            "group": "6281235190914-1462187599"
         }
     ]
 }

@@ -16,7 +16,6 @@ const storage = new HandyStorage({
 });
 storage.connect('./wa.storage.json');
 storage.setState({
-    ...storage.state,
     firstTime: true,
     log: {
         minutes: 0,
@@ -44,4 +43,6 @@ client.on('message', (message) => messageController(client, message));
 // * O move & execute createAutoSendData on early main file
 // * O make random message on state too
 // * O create based on date
+// * O fix the bug re create storage
+// * make example config dot json
 // * make command to help chat id
