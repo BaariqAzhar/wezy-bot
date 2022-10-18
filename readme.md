@@ -2,7 +2,9 @@
 
 **Whatsapp Bot with Eazy Configuration**
 
-It's a fun project, the purpose of this project is the author wants to learn Node JS. But it's too boring if making CRUD like always do
+Do you want to automate your Whatsapp messages?
+
+Sending a message / remind to someone every day but too lazy to do it over and over again. Or reply the messages automatically
 
 ## Tech Stack 🛠
 
