@@ -124,11 +124,12 @@ Setup your bot
 
 Feature of sending messages by time
 
-| Name    | Type            | Description                                                                 |
-| ------- | --------------- | --------------------------------------------------------------------------- |
-| time    | string          | Using 24 H format, can be specific hours or choose random in the time range |
-| message | string/string[] | Message you want to send, can be fixed message or random message            |
-| no      | string          | Target number                                                               |
+| Name    | Type              | Description                                                                 |
+| ------- | ----------------- | --------------------------------------------------------------------------- |
+| date    | string (optional) | Using DD MMM format, send on specific date                                  |
+| time    | string            | Using 24 H format, can be specific hours or choose random in the time range |
+| message | string/string[]   | Message you want to send, can be fixed message or random message            |
+| no      | string            | Target number                                                               |
 
 #### reply
 
