@@ -85,7 +85,7 @@ This is a quick example of using Wezy bot
             "date": "23 Jun",
             "time": "05:00",
             "message": "Happy birthday, Hope all your birthday wishes come true!",
-            "no": "+6282301027618"
+            "no": "+6287700000002"
         }
     ],
     "reply": [
